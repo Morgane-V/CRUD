@@ -21,10 +21,10 @@
 <header>
     <div id="menu">
         <div class="crud"><a href="http://localhost/CRUD/" style="color: black;"><h1>Mon CRUD</h1></a></div>
-        <div class="create"><a href="http://localhost/CRUD/create.html" style="color: black;">Create</a></div>
-        <div class="read"><a href="http://localhost/CRUD/read.html" style="color: black">Read</a></div>
-        <div class="update"><a href="http://localhost/CRUD/update.html" style="color: black">Update</a></div>
-        <div class="delete"><a href="http://localhost/CRUD/delete.html" style="color: black;">Delete</a></div>
+        <div class="create"><a href="http://localhost/CRUD/Views/create.php" style="color: black;">Create</a></div>
+        <div class="read"><a href="http://localhost/CRUD/Views/read.php" style="color: black">Read</a></div>
+        <div class="update"><a href="http://localhost/CRUD/Views/update.php" style="color: black">Update</a></div>
+        <div class="delete"><a href="http://localhost/CRUD/Views/delete.php" style="color: black;">Delete</a></div>
     </div>
 </header>
 
@@ -38,8 +38,8 @@ echo$_SESSION['id'];
 
 <body>
 
-        <p>Veuillez changer les champs suivant pour modifier vos informations</p>
-                <form method="POST" action="update_ctrl.php">
+        <p>Veuillez remplir les champs suivant avec vos nouvelles informations</p>
+                <form method="POST" action="/CRUD/Controllers/update_ctrl.php">
     
                     <div class="infos pseudo">
                         <label class="texte" for="pseudo">Pseudo</label>

@@ -25,8 +25,8 @@ if($result->rowCount() > 0){
     session_start();
     $_SESSION['id']=$tableau['id'];
     $_SESSION['pseudo'] = $pseudo;
-    set_time_limit(100);
-    header('Location:Monprofil.php');
+    set_time_limit(300);
+    header('Location:update.php');
 }
 
 

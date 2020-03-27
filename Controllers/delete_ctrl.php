@@ -13,9 +13,9 @@ if ($db->connect_error){
 }
 echo 'Connexion réussie';
 
-//insert
-$select = "INSERT INTO user (pseudo, mot_de_passe, ma_description) VALUE('$pseudo','$mdp','$desc')";
-$insertion = $db->prepare($select);
-$insertion->execute();
+//delete
+$select = "DELETE * FROM user WHERE id=$id ";
+$delete = $db->prepare($select);
+$delete->execute();
 
-header('Location:index.php');
+//header('Location:index.php');

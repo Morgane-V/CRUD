@@ -1,15 +1,3 @@
-<?php
-session_start();
-echo "Vous êtes connecté. Votre id est le numéro : ";
-echo$_SESSION['id'];
-$id=$_SESSION['id'];
-
-?>
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,13 +27,21 @@ $id=$_SESSION['id'];
         <div class="delete"><a href="http://localhost/CRUD/Views/delete.php" style="color: black;">Delete</a></div>
     </div>
 </header>
+
+
+
+<?php
+session_start();
+echo "Vous êtes connecté. Votre id est le numéro : ";
+echo$_SESSION['id'];
+?>
+
+
+
+
 <body>
                 <form method="POST" action="/CRUD/Controllers/delete_ctrl.php">
     
-                    <div>
-                        <label class="texte" for="pseudo">Pseudo</label>
-                        <input type="text" name="pseudo" placeholder="Pseudo"> 
-                    </div>
             
                         <input type="submit" value="Envoyer">
                 </form>

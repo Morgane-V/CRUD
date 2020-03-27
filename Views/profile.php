@@ -26,7 +26,7 @@ if($result->rowCount() > 0){
     $_SESSION['id']=$tableau['id'];
     $_SESSION['pseudo'] = $pseudo;
     set_time_limit(300);
-    header('Location:update.php');
+    header('Location:read.php');
 }
 
 

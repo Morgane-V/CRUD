@@ -6,10 +6,6 @@ $pseudo = htmlspecialchars($_POST['pseudo']);
 $mdp = htmlspecialchars($_POST['mdp']);
 $desc = htmlspecialchars($_POST['desc']);
 
-
-
-
-
 //connexion
 $db = new PDO('mysql:host=localhost;dbname=crud;charset=utf8','stagiaire','stagiairealaji');
 
@@ -31,7 +27,7 @@ $sql = "UPDATE user SET pseudo='$pseudo', mot_de_passe='$mdp', ma_description='$
 if ($db->query($sql) == TRUE) {
     echo "Record updated successfully";
 } else {
-    echo "Error updating record: " . $conn->error;
+    echo "Error updating record: ";
 }
 
 

@@ -14,13 +14,29 @@
         <div class="delete"><a href="http://localhost/CRUD/Views/delete.php" style="color: black;">Delete</a></div>
     </div>
 </header>
+
+
+<?php
+session_start();
+echo "Vous êtes connecté. Votre id est le numéro : ";
+echo$_SESSION['id'];
+
+?>
+
+
+
 <body>
-    
-    <form method="POST" action="">
+
+    <p>
+        Veuillez rentrer votre pseudo pour visualiser vos informations.
+    </p>
+
+    <form method="POST" action="/CRUD/Controllers/read_ctrl.php">
     
         <div class="infos pseudo">
             <label class="texte" for="pseudo">Votre pseudo</label>
             <input type="text" name="pseudo" placeholder="Pseudo"> 
+            <input type="submit" value="Entrée">
         </div>
     </form>
     

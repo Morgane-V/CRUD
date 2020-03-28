@@ -29,7 +29,7 @@ if ($db->query($sql) == TRUE) {
 } else {
     echo "Error updating record: ";
 }
-
+session_unset();
 
 header('Location:/CRUD/Views/read.php');
 

@@ -25,6 +25,8 @@ if($result->rowCount() > 0){
     session_start();
     $_SESSION['id']=$tableau['id'];
     $_SESSION['pseudo'] = $pseudo;
+    $_SESSION['mot_de_passe'];
+    $_SESSION['ma_description'];
     set_time_limit(300);
     header('Location:read.php');
 }

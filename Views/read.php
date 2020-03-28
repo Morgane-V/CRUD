@@ -20,6 +20,8 @@
 session_start();
 echo "Vous êtes connecté. Votre id est le numéro : ";
 echo$_SESSION['id'];
+echo$_SESSION['mdp'];
+
 
 ?>
 
